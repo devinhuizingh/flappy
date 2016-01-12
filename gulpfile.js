@@ -10,6 +10,8 @@ var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
+var neat = require('node-neat');
+neat.includePaths // Array of Neat paths
 
 // JavaScript linting task
 gulp.task('jshint', function() {
@@ -21,7 +23,9 @@ gulp.task('jshint', function() {
 // Compile Sass task
 gulp.task('sass', function() {
   return gulp.src('site/scss/*.scss')
-    .pipe(sass())
+    .pipe(sass({
+    	includePaths: require('node-neat').includePaths
+    }))
     .pipe(gulp.dest('site/css'));
 });
 

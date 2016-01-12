@@ -1,3 +1,9 @@
+$tablet: 'min-width: 640px';
+@import "bourbon";
+@import "neat";
+
+
+
 nav{
 	background: blue;
 	margin-top: 0px;
@@ -6,6 +12,7 @@ nav{
 header{
 	background: green;
 	height: 40em;
+	width: 640px;
 	
 }
 li {
@@ -21,3 +28,18 @@ footer {
 	background: grey;
 	margin-top: -16px;
 	 }
+
+
+@media screen and ($tablet) {
+	//  Neat Columns
+	.responsive {
+  		
+  		header { @include span-columns(9); }
+  		body { @include span-columns(3); }
+	};
+	.screen_shots, .calltoaction {
+	background: purple; 
+	
+	}
+}
+
