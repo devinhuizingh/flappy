@@ -11,8 +11,8 @@ nav{
 }
 header{
 	background: green;
-	height: 40em;
-	width: 640px;
+	height: 30em;
+	width: 100%;
 	
 }
 li {
@@ -27,6 +27,7 @@ li {
 footer {
 	background: grey;
 	margin-top: -16px;
+	width: 100%;
 	 }
 
 
@@ -35,7 +36,7 @@ footer {
 	.responsive {
   		
   		header { @include span-columns(9); }
-  		body { @include span-columns(3); }
+  		.flow { @include span-columns(3); }
 	};
 	.screen_shots, .calltoaction {
 	background: purple; 

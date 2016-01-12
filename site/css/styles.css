@@ -11,8 +11,8 @@ nav {
 
 header {
   background: green;
-  height: 40em;
-  width: 640px; }
+  height: 30em;
+  width: 100%; }
 
 li {
   display: inline-block; }
@@ -23,7 +23,8 @@ li {
 
 footer {
   background: grey;
-  margin-top: -16px; }
+  margin-top: -16px;
+  width: 100%; }
 
 @media screen and (min-width: 640px) {
   .responsive header {
@@ -33,12 +34,12 @@ footer {
     width: 74.41059%; }
     .responsive header:last-child {
       margin-right: 0; }
-  .responsive body {
+  .responsive .flow {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 23.23176%; }
-    .responsive body:last-child {
+    .responsive .flow:last-child {
       margin-right: 0; }
   .screen_shots, .calltoaction {
     background: purple; } }
