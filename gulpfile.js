@@ -57,7 +57,7 @@ gulp.task('styles', function() {
     .pipe(concat('styles.css'))
     .pipe(gulp.dest('build/css'));
 });
-
+ 
 // Image optimization task
 gulp.task('images', function() {
   return gulp.src('site/img/*')

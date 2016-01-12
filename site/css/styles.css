@@ -1,0 +1,19 @@
+nav {
+  background: blue;
+  margin-top: 0px;
+  margin-bottom: -22px; }
+
+header {
+  background: green;
+  height: 40em; }
+
+li {
+  display: inline-block; }
+
+.screen_shots, .calltoaction {
+  background: orange;
+  height: 5em; }
+
+footer {
+  background: grey;
+  margin-top: -16px; }
