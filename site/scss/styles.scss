@@ -3,18 +3,12 @@ $tablet: 'min-width: 640px';
 @import "neat";
 
 
-
 nav{
 	background: blue;
-	margin-top: 0px;
-	margin-bottom: -22px;
-}
-header{
-	background: green;
-	height: 30em;
-	width: 100%;
 	
 }
+
+	
 li {
 	display: inline-block
 }
@@ -26,15 +20,43 @@ li {
 
 footer {
 	background: grey;
-	margin-top: -16px;
+	
 	width: 100%;
 	 }
+
+
+.responsive {
+	width: 100%;
+  	margin: 0
+  	}
+@media screen and ($tablet) {
+	//  Neat Columns
+.responsive {
+	//I didn't include OC in the brackets
+  @include outer-container;
+  header {@include span-columns(8);}
+  .flow{@include span-columns(4);}
+}}
+//.responsive {
+//	@include span-columns(12);
+//	@include media($tablet) {
+//    background: purple;
+//    @media screen and ($tablet) {
+		
+//	}
+/*
+  @include media($tablet) {
+    @include span-columns(6);
+  }
+}
+
 
 
 @media screen and ($tablet) {
 	//  Neat Columns
 	.responsive {
   		
+
   		header { @include span-columns(9); }
   		.flow { @include span-columns(3); }
 	};
@@ -44,3 +66,4 @@ footer {
 	}
 }
 
+*/
