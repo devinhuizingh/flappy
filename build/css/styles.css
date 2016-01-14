@@ -45,27 +45,3 @@ footer {
       width: 31.76157%; }
       .responsive .flow:last-child {
         margin-right: 0; } }
-
-/*
-  @include media($tablet) {
-    @include span-columns(6);
-  }
-}
-
-
-
-@media screen and ($tablet) {
-	//  Neat Columns
-	.responsive {
-  		
-
-  		header { @include span-columns(9); }
-  		.flow { @include span-columns(3); }
-	};
-	.screen_shots, .calltoaction {
-	background: purple; 
-	
-	}
-}
-
-*/
