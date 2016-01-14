@@ -7,6 +7,9 @@ html {
 nav {
   background: blue; }
 
+.image {
+  max-width: 30em; }
+
 li {
   display: inline-block; }
 
